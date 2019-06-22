@@ -57,7 +57,7 @@ class CamaraViewController: UIViewController {
     //    CreatePost(img: <#T##UIImage#>)
 
                 print("posting....")
-                let img = UIImage(named: "church")!
+                let img = UIImage(named: "extra")!
                 createPost(img: img)
     }
     
