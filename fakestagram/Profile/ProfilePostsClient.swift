@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class ProfilePostsClient: RestClient<[Post]> {
+    convenience init(){
+        self.init(client: Client(), path: "/api/profile/posts")
+    }
+}

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7jD-KP-m19">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7jD-KP-m19">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,42 +13,73 @@
         <!--Photo-->
         <scene sceneID="fT2-kv-dq9">
             <objects>
-                <viewController id="0rS-E4-WRa" sceneMemberID="viewController">
+                <viewController id="0rS-E4-WRa" customClass="CamaraViewController" customModule="fakestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lar-lz-tt1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO3-XO-VzI">
+                                <rect key="frame" x="145" y="699" width="124" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="likeTap:" destination="vYp-dV-7DG" eventType="touchUpInside" id="Qco-dt-MP4"/>
+                                    <action selector="onTapSnap:" destination="0rS-E4-WRa" eventType="touchUpInside" id="8eX-Vd-JrI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk7-zw-M7I">
+                                <rect key="frame" x="10" y="737" width="394" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Capture">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.13985642679999999" blue="0.17778567440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapCapture:" destination="0rS-E4-WRa" eventType="touchUpInside" id="w5z-jW-wFg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SAo-UK-5Ng" firstAttribute="bottom" secondItem="kk7-zw-M7I" secondAttribute="bottom" constant="10" id="58k-0a-xtS"/>
+                            <constraint firstItem="SAo-UK-5Ng" firstAttribute="trailing" secondItem="kk7-zw-M7I" secondAttribute="trailing" constant="10" id="pOp-n7-46d"/>
+                            <constraint firstItem="kk7-zw-M7I" firstAttribute="top" secondItem="dO3-XO-VzI" secondAttribute="bottom" constant="10" id="uW3-rA-XCS"/>
+                            <constraint firstItem="kk7-zw-M7I" firstAttribute="leading" secondItem="SAo-UK-5Ng" secondAttribute="leading" constant="10" id="vvj-SM-Jfl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SAo-UK-5Ng"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Photo" image="camera" id="ygy-XD-3IH" userLabel="Create"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfC-sh-ILb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vYp-dV-7DG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1431.2" y="796.55172413793105"/>
+            <point key="canvasLocation" x="1430.4347826086957" y="796.20535714285711"/>
         </scene>
         <!--Profile Name-->
         <scene sceneID="F5e-x0-Usw">
             <objects>
                 <viewController id="ZXG-Uf-fgx" customClass="ProfileViewController" customModule="fakestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Olc-Pp-Vyl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-wM-iiK">
-                                <rect key="frame" x="0.0" y="141" width="375" height="477"/>
+                                <rect key="frame" x="0.0" y="165" width="414" height="648"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="90a-Dj-e17">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="110" height="110"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="postThumbnailCell" id="hNe-iV-wVI">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
@@ -77,22 +108,23 @@
                     <navigationItem key="navigationItem" title="Profile Name" id="g7K-02-Y1a"/>
                     <connections>
                         <outlet property="authorView" destination="5q0-Ap-zuW" id="rlW-2a-7Tn"/>
+                        <outlet property="peviewPostsCollectionView" destination="iR7-wM-iiK" id="kNa-s4-NRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oI-Up-tFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3106.4000000000001" y="796.55172413793105"/>
+            <point key="canvasLocation" x="3105.7971014492755" y="796.20535714285711"/>
         </scene>
         <!--Timeline-->
         <scene sceneID="GU1-WE-kfL">
             <objects>
                 <viewController title="Timeline" id="2yH-QA-kiC" customClass="TimelineViewController" customModule="fakestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5B8-ah-3ZN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7tD-34-dHG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fQ7-fW-o4B">
                                     <size key="itemSize" width="50" height="50"/>
@@ -156,7 +188,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="user_male" id="ZpN-dg-PQR" userLabel="profile"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Ka-yf-UNP">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -175,7 +207,7 @@
                     <tabBarItem key="tabBarItem" title="Feed" image="approval" id="6Gy-7J-JuA" userLabel="Feed"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v9s-Fu-NrU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

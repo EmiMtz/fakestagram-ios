@@ -9,6 +9,7 @@
 import Foundation
 
 struct Author: Codable {
+    let id: String
     let name: String
 
     func avatarUrl() -> URL {

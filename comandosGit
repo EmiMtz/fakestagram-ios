@@ -1,0 +1,210 @@
+    2  git
+    3  https://github.com/iOSLabUNAM/diplomado/issues/1
+    4  https://github.com/iOSLabUNAM/diplomado/issues/1
+    5  https://github.com/iOSLabUNAM/diplomado/issues/1
+   33  git status
+   36  git status
+   37  git commit -m "Initial commit"
+   38  git status
+   39  git add .
+   40  git status
+   41  git commit -m "Initial commit"
+   42  git remote add origin https://github.com/cruzapke/Tarea-Auto-Layout.git
+   43  git push -u origin master
+   46  git remote add origin https://github.com/cruzapke/Tarea-Auto-Layout.git
+   47  git init
+   49  git status
+   50  git commit -m "first commit"
+   51  git remote add origin https://github.com/cruzapke/Fakstagram.git
+   52  git push -u origin master
+   53  git push -u origin master
+   54  git commit -m "Initial commit"
+   55  git remote add origin https://github.com/cruzapke/Fakstagram.git
+   56  git push -u origin master
+   57  git remote add origin https://github.com/cruzapke/Fakestagram.git
+   58  git remote add origin https://github.com/cruzapke/Fakstagram.git
+   61  git init
+   63  git status
+   64  git commit -m "Initial commit"
+   65  git status
+   66  git add.
+   67  git a
+   68  git status
+   69  git commit -m "Initial commit"
+   70   git remote add origin 
+   71  git remote add origin 
+   72  git remote add origin
+   74  git status
+   75  git remote add origin https://github.com/cruzapke/Tarea-Auto-Layout.git
+   76  git push -u origin master
+   79  git status
+   80  git add .
+   82  git status
+   83  git remote add origin https://github.com/cruzapke/Fakstagram.git
+   84  git push -u origin master
+   89  git init
+   90  git status
+   91  git add .
+   92  git status
+   93  git commit -m "first commit"
+   94  git remote add origin https://github.com/cruzapke/FakestagramKel.git
+   95  git push -u origin master
+  100  git remote -v
+  123  git status
+  124  git status
+  131  git status
+  133  clone https://github.com/cruzapke/fakestagram-ios.git
+  136  clone https://github.com/cruzapke/fakestagram-ios.git
+  137  git clone https://github.com/cruzapke/fakestagram-ios.git
+  142  git fetch upstream
+  143  git status
+  154  git fetch upstream
+  155  git status
+  157  git status
+  158  git status
+  159  git fetch upstream
+  160  clone https://github.com/cruzapke/fakestagram-ios.git
+  161  cd clone https://github.com/cruzapke/fakestagram-ios.git
+  163  clone https://github.com/cruzapke/fakestagram-ios.git
+  164  git clone https://github.com/cruzapke/fakestagram-ios.git
+  165  git status
+  166  git fetch upstream
+  167  git status
+  168  git log
+  169  git log
+  170  git clone https://github.com/cruzapke/fakestagram-ios.git
+  172  git clone https://github.com/cruzapke/fakestagram-ios.git
+  177  git clone https://github.com/cruzapke/fakestagram-ios.git
+  178  git status
+  179  git chekcous
+  180  git chekcout
+  181  git status
+  182  git chekcout
+  183  git status
+  184  git status
+  189  git clone https://github.com/cruzapke/fakestagram-ios.git
+  190  git fetch upstream
+  191  git fetch upstream
+  192  git fetch upstream
+  193  git fetch upstream
+  194  git fetch upstream
+  195  git fetch upstream
+  196  git fetch upstream
+  197  git fetch upstream
+  198  git fetch upstream
+  199  git fetch upstream
+  200  git fetch upstream
+  201  git status
+  208  git remote -v
+  210  git remote -v
+  211  git remote add upstream https://github.com/cruzapke/fakestagram-ios.git
+  212  git remote -v
+  213  git fetch upstream
+  214  git log
+  215  git status
+  216  git checkout master
+  217  git checkout master
+  218  git checkout master
+  223  git fetch upstream
+  224  git fetch upstream
+  225  git remote -v
+  226  git fetch upstream
+  229  git remote -v
+  231  git remote -v
+  233  git remote -v
+  234  git remote -v
+  236  git remote -v
+  238  git log
+  241  git remote -v 
+  242  git remote -v .git
+  246  git remote -v
+  247  git remote add upstream https://github.com/cruzapke/fakestagram-ios.git
+  248  git remote add upstream https://github.com/cruzapke/fakestagram-ios.git
+  249  git remote -v
+  250  git remote -v
+  251  git fetch upstream
+  252  git checkout master
+  253  git merge upstream/master
+  254  git merge upstream/master
+  256  git remote -v
+  257  git merge upstream/master
+  258  git merge upstream/master
+  259  git merge upstream/master
+  260  git merge upstream/master
+  261  git merge upstream/master
+  262  git merge upstream/mastercd
+  265  git merge upstream/master
+  266  git merge upstream/master
+  267  git checkout -b kelly-cruz
+  268  git status
+  269  git commit -am ""
+  270  git commit -am ""
+  271  git diff
+  272  git commit -am ""
+  276  git diff
+  279  git diff
+  280  git commit -am ""
+  281  git commit -am ""
+  282  git merge upstream/master
+  283  git merge upstream/master
+  286  git batch
+  287  git branch
+  288  git branch -b kelly-cruz
+  289  git branch -b kelly
+  290  git branch -b "kelly-cruz"
+  291  git branch -b "kelly-cruz"
+  292  git branch
+  293  git branch -f "kelly-cruz"
+  294  git branch
+  295  git branch -f "kelly-cruz"
+  296  git branch -b "kelly-cruz"
+  297  git branch -b "kelly-cruz"
+  298  git branch
+  299  git branch -b "kelly-cruz"
+  304  git status
+  306  git status
+  307  git status
+  308  git status
+  309  git status
+  310  git status
+  316  git remote -v
+  318  git remote -v
+  319  git remote add upstream https://github.com/cruzapke/fakestagram-ios.git
+  320  git remote -v
+  321  git fetch upstream
+  322  git merge upstream/master
+  323  git merge upstream/master
+  324  git branch
+  325  git branch
+  326  git branch
+  327  git branch
+  328  git branch
+  329  git branch
+  330  git branch
+  331  git branch
+  332  git branch
+  333  git branch
+  334  git merge upstream/master
+  335  git log
+  336  git stash
+  337  git fetch upstream
+  338  git merge upstream/master
+  339  git log
+  340  git status
+  341  git branch
+  346  git status
+  347   git branch
+  352  git status
+  360  git clone https://github.com/3zcurdia/fakestagram-ios.git
+  361  git status
+  364  git status
+  365* git 
+  366  git status --all
+  367  git status -all
+  368  git branch --all
+  369  git pull origin luis-ezcurdia
+  370  git branch
+  371  git checkout luis-ezcurdia
+  373  git branch
+  377  history | git > comandosGit
+  381  history | grep git > comandosGit

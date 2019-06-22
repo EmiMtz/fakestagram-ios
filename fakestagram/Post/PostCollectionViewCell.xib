@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sni-u6-baQ" customClass="PostAuthorView" customModule="fakestagram" customModuleProvider="target">
                         <rect key="frame" x="5" y="5" width="345" height="64"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="64" id="doV-8f-0Xf"/>
                         </constraints>
@@ -32,13 +32,16 @@
                             <constraint firstAttribute="width" secondItem="B7R-9H-BNz" secondAttribute="height" multiplier="1:1" id="y3W-Xh-VPN"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2G7-mz-Uik">
-                        <rect key="frame" x="20" y="430.5" width="30" height="30"/>
-                        <state key="normal" title="Like"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2G7-mz-Uik">
+                        <rect key="frame" x="20" y="437" width="30" height="30"/>
+                        <state key="normal" image="heart"/>
+                        <connections>
+                            <action selector="tapLike:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ivg-Yf-UXK"/>
+                        </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REL-BQ-2kR">
-                        <rect key="frame" x="55" y="430.5" width="67" height="30"/>
-                        <state key="normal" title="Comment"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REL-BQ-2kR">
+                        <rect key="frame" x="55" y="437" width="30" height="30"/>
+                        <state key="normal" image="comments"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1213 Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-mc-RD9">
                         <rect key="frame" x="250" y="437.5" width="85" height="21"/>
@@ -47,7 +50,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="#hikingTrails said lorem ipsum dolor quet sit ammet consectetur adipsum elit eit lorem..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCK-8L-B25">
-                        <rect key="frame" x="5" y="461" width="345" height="48"/>
+                        <rect key="frame" x="5" y="477" width="345" height="48"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48" id="nmb-NQ-CB1"/>
                         </constraints>
@@ -55,7 +58,7 @@
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2123 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00E-Fs-pbe">
-                        <rect key="frame" x="5" y="512" width="91" height="15"/>
+                        <rect key="frame" x="5" y="528" width="91" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,7 +66,7 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="2G7-mz-Uik" firstAttribute="firstBaseline" secondItem="B7R-9H-BNz" secondAttribute="baseline" constant="22" symbolType="layoutAnchor" id="6Go-8K-KwY"/>
+                <constraint firstItem="2G7-mz-Uik" firstAttribute="firstBaseline" secondItem="B7R-9H-BNz" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="6Go-8K-KwY"/>
                 <constraint firstItem="UCK-8L-B25" firstAttribute="firstBaseline" secondItem="2G7-mz-Uik" secondAttribute="baseline" constant="10" id="8cj-Df-jnf"/>
                 <constraint firstItem="B7R-9H-BNz" firstAttribute="top" secondItem="Sni-u6-baQ" secondAttribute="bottom" constant="5" id="AiR-GR-cG0"/>
                 <constraint firstItem="Sni-u6-baQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="CZw-pF-mht"/>
@@ -74,7 +77,7 @@
                 <constraint firstAttribute="trailing" secondItem="UCK-8L-B25" secondAttribute="trailing" constant="5" id="TMO-0A-YmH"/>
                 <constraint firstItem="UCK-8L-B25" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Uir-q5-aMs"/>
                 <constraint firstAttribute="trailing" secondItem="lfa-mc-RD9" secondAttribute="trailing" constant="20" id="WFx-Er-DPP"/>
-                <constraint firstItem="REL-BQ-2kR" firstAttribute="firstBaseline" secondItem="B7R-9H-BNz" secondAttribute="baseline" constant="22" symbolType="layoutAnchor" id="XAA-5J-Lgb"/>
+                <constraint firstItem="REL-BQ-2kR" firstAttribute="firstBaseline" secondItem="B7R-9H-BNz" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="XAA-5J-Lgb"/>
                 <constraint firstItem="B7R-9H-BNz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y5K-Y2-CgD"/>
                 <constraint firstAttribute="trailing" secondItem="Sni-u6-baQ" secondAttribute="trailing" constant="5" id="deS-me-IBd"/>
                 <constraint firstItem="Sni-u6-baQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="fE2-Tx-V6n"/>
@@ -93,4 +96,8 @@
             <point key="canvasLocation" x="375.19999999999999" y="385.90704647676165"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="comments" width="30" height="30"/>
+        <image name="heart" width="30" height="30"/>
+    </resources>
 </document>

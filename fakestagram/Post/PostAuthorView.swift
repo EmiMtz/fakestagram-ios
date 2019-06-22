@@ -60,5 +60,23 @@ class PostAuthorView: UIView {
         guard let author = self.author else { return }
         nameLbl.text = author.name
         avatarView.loadContent(from: author.avatarUrl())
+//        loadAvatar()
+//        avatarView.loadContent(from: author.avatarUrl())
     }
+    
+//    private func loadAvatar() {
+//        
+//        let cache = ImageCache(filename: "image-\(self.id).jpg")
+//        if let img = cache.load() {
+//            avatarView.loadContent(from: author?.avatarUrl())
+//            return
+//        }
+//        guard let urlString = imageUrl, let url = URL(string: urlString) else { return }
+//        DispatchQueue.global(qos: .background).async {
+//            if let data = try? Data(contentsOf: url), let img = UIImage(data: data) {
+//                DispatchQueue.main.async { image(img) }
+//                _ = cache.save(image: img)
+//            }
+//        }
+//    }
 }
