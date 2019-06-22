@@ -77,6 +77,8 @@ class CamaraViewController: UIViewController {
         actionSheet.addAction(UIAlertAction(title: "Biblioteca", style: .default, handler: { (action) in
             pickerController.sourceType = .photoLibrary
             self.present(pickerController, animated: true, completion: nil)
+            
+            
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
@@ -134,10 +136,28 @@ extension CamaraViewController : UIImagePickerControllerDelegate, UINavigationCo
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info:  [UIImagePickerController.InfoKey : Any]) {
         
-        guard let imagen = info[.editedImage]as? UIImage else {return}
+        guard let image = info[.editedImage]as? UIImage else {return}
         //createPost(img: imagen)
+        createPost(img: image)
         picker.dismiss(animated: true, completion: nil)
     }
     
     
 }
+
+//extension CamaraViewController : UIImagePickerControllerDelegate{
+//
+//    func imagePickerControllerDidCancel(_picker: UIImagePickerController) {
+//        _picker.dismiss(animated: true, completion: nil)
+//    }
+//
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+//
+//        guard let image = info[.editedImage] as? UIImage else { return }
+//
+//        imagen.image = image
+//        picker.dismiss(animated: true, completion: nil)
+//    }
+//
+//}
+
